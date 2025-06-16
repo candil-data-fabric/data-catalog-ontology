@@ -1,0 +1,264 @@
+@prefix : <https://w3id.org/candil-data-fabric/data-catalog#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/candil-data-fabric/data-catalog#> .
+
+<https://w3id.org/candil-data-fabric/data-catalog#> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://w3id.org/candil-data-fabric/data-catalog> ;
+                                                     <http://purl.org/dc/terms/contributor> "Lucia Cabanillas Rodriguez" ;
+                                                     <http://purl.org/dc/terms/created> "2025-02-17"^^xsd:date ;
+                                                     <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" ;
+                                                     <http://purl.org/dc/terms/description> "Data Catalog Ontology for the CANDIL Data Fabric" ;
+                                                     <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
+                                                     <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> ;
+                                                     <http://purl.org/dc/terms/title> "CANDIL Data Catalog Ontology" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "cdc" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/candil-data-fabric/data-catalog#> ;
+                                                     <http://www.owl-ontologies.com/schema#codeRepository> "https://github.com/candil-data-fabric/data-catalog-ontology"^^xsd:anyURI ;
+                                                     owl:priorVersion <https://w3id.org/candil-data-fabric/data-catalog> ;
+                                                     owl:versionInfo "1.0.0" ;
+                                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
+                                       rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty ;
+                                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.owl-ontologies.com/schema#codeRepository
+<http://www.owl-ontologies.com/schema#codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:label "in scheme" .
+
+
+###  http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> rdf:type owl:ObjectProperty ;
+                                          rdfs:label "access service" .
+
+
+###  http://www.w3.org/ns/dcat#dataset
+<http://www.w3.org/ns/dcat#dataset> rdf:type owl:ObjectProperty ;
+                                    rdfs:label "dataset" .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> rdf:type owl:ObjectProperty ;
+                                         rdfs:label "distribution" .
+
+
+###  http://www.w3.org/ns/dcat#endpointURL
+<http://www.w3.org/ns/dcat#endpointURL> rdf:type owl:ObjectProperty ;
+                                        rdfs:label "endpoint u r l" .
+
+
+###  http://www.w3.org/ns/dcat#mediaType
+<http://www.w3.org/ns/dcat#mediaType> rdf:type owl:ObjectProperty ;
+                                      rdfs:label "media type" .
+
+
+###  http://www.w3.org/ns/dcat#service
+<http://www.w3.org/ns/dcat#service> rdf:type owl:ObjectProperty ;
+                                    rdfs:label "service" .
+
+
+###  http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> rdf:type owl:ObjectProperty ;
+                                  rdfs:label "theme" .
+
+
+###  http://www.w3.org/ns/dcat#themeTaxonomy
+<http://www.w3.org/ns/dcat#themeTaxonomy> rdf:type owl:ObjectProperty ;
+                                          rdfs:label "theme taxonomy" .
+
+
+###  http://www.w3.org/ns/org#member
+<http://www.w3.org/ns/org#member> rdf:type owl:ObjectProperty ;
+                                  rdfs:label "member" .
+
+
+###  http://www.w3.org/ns/org#organization
+<http://www.w3.org/ns/org#organization> rdf:type owl:ObjectProperty ;
+                                        rdfs:label "organization" .
+
+
+###  http://www.w3.org/ns/org#role
+<http://www.w3.org/ns/org#role> rdf:type owl:ObjectProperty ;
+                                rdfs:label "role" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdf:type owl:DatatypeProperty ;
+                                    rdfs:range rdfs:Literal ;
+                                    rdfs:label "keyword" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/MediaType
+<http://purl.org/dc/terms/MediaType> rdf:type owl:Class ;
+                                     rdfs:label "Media Type" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type owl:Class ;
+              rdfs:label "Resource" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:label "Concept" .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    rdfs:label "Concept Scheme" .
+
+
+###  http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> rdf:type owl:Class ;
+                                    rdfs:label "Catalog" .
+
+
+###  http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> rdf:type owl:Class ;
+                                        rdfs:label "Data Service" .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
+                                    rdfs:label "Dataset" .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class ;
+                                         rdfs:label "Distribution" .
+
+
+###  http://www.w3.org/ns/org#Membership
+<http://www.w3.org/ns/org#Membership> rdf:type owl:Class ;
+                                      rdfs:label "Membership" .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class ;
+                                        rdfs:label "Organization" .
+
+
+###  http://www.w3.org/ns/org#Role
+<http://www.w3.org/ns/org#Role> rdf:type owl:Class ;
+                                rdfs:label "Role" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:label "Person" .
+
+
+###  https://w3id.org/candil-data-fabric/data-catalog#ContextBroker
+:ContextBroker rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/dcat#DataService> ;
+               rdfs:label "Context Broker" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/terms/description> rdfs:label "description" .
+
+
+<http://purl.org/dc/terms/publisher> rdfs:label "publisher" .
+
+
+<http://purl.org/dc/terms/title> rdfs:label "title" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

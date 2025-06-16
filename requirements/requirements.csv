@@ -1,0 +1,11 @@
+Id,Competency Question/Statement
+R1,A data product represent a logical a dataset semantically annotated and managed under governance rules
+R2,A data product has name and a description
+R3,An NGSI-LD Context Broker is a data source that exposes data in NGSI-LD format
+CQ1,What is the distribution the data product has been materialized to?
+CQ2,Which context broker exposes the distribution?
+CQ3,Which URL the data can be accessed at in the Context Broker?
+CQ4,Who is the publisher of the data product?
+CQ5,What are the keywords related to the data product?
+CQ6,What is a business glossary?
+CQ7,Which are the glossary terms linked to the data product?
