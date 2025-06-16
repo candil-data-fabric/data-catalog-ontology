@@ -2,6 +2,7 @@
 
 ## Purpose and Scope
 
+This ontology provides a representation of the Data Catalog used by the CANDIL Data Fabric. The ontology reuses existing ontologies such as DCAT, ORG or DCTERMS and extends them with the concept of an NGSI-LD Context Broker as a data source.
 
 ## Vocabulary Development
 
@@ -15,7 +16,7 @@ The requirements of this ontology are written as competency questions/natural la
 
 The following diagrams shows the classes and properties defined in the ontology. The diagram follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
 
-![Data Catalog Ontology Diagram](diagrams/ontology-figures.svg)
+![Data Catalog Ontology Diagram](diagrams/data-catalog/data-catalog.svg)
 
 ### Ontology Code (OWL)
 
