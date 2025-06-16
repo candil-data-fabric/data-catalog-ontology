@@ -1,0 +1,142 @@
+@prefix cdc: <https://w3id.org/candil-data-fabric/data-catalog#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://www.owl-ontologies.com/schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:MediaType a owl:Class ;
+    rdfs:label "Media Type" .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty,
+        owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:range rdfs:Literal .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty,
+        owl:ObjectProperty ;
+    rdfs:label "publisher" .
+
+dcterms:title a owl:AnnotationProperty,
+        owl:DatatypeProperty ;
+    rdfs:label "title" ;
+    rdfs:range rdfs:Literal .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:codeRepository a owl:AnnotationProperty .
+
+rdfs:Resource a owl:Class ;
+    rdfs:label "Resource" .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+skos:Concept a owl:Class ;
+    rdfs:label "Concept" .
+
+skos:ConceptScheme a owl:Class ;
+    rdfs:label "Concept Scheme" .
+
+skos:inScheme a owl:ObjectProperty ;
+    rdfs:label "in scheme" .
+
+dcat:Catalog a owl:Class ;
+    rdfs:label "Catalog" .
+
+dcat:Dataset a owl:Class ;
+    rdfs:label "Dataset" .
+
+dcat:Distribution a owl:Class ;
+    rdfs:label "Distribution" .
+
+dcat:accessService a owl:ObjectProperty ;
+    rdfs:label "access service" .
+
+dcat:dataset a owl:ObjectProperty ;
+    rdfs:label "dataset" .
+
+dcat:distribution a owl:ObjectProperty ;
+    rdfs:label "distribution" .
+
+dcat:endpointURL a owl:ObjectProperty ;
+    rdfs:label "endpoint u r l" .
+
+dcat:keyword a owl:DatatypeProperty ;
+    rdfs:label "keyword" ;
+    rdfs:range rdfs:Literal .
+
+dcat:mediaType a owl:ObjectProperty ;
+    rdfs:label "media type" .
+
+dcat:service a owl:ObjectProperty ;
+    rdfs:label "service" .
+
+dcat:theme a owl:ObjectProperty ;
+    rdfs:label "theme" .
+
+dcat:themeTaxonomy a owl:ObjectProperty ;
+    rdfs:label "theme taxonomy" .
+
+org:Membership a owl:Class ;
+    rdfs:label "Membership" .
+
+org:Organization a owl:Class ;
+    rdfs:label "Organization" .
+
+org:Role a owl:Class ;
+    rdfs:label "Role" .
+
+org:member a owl:ObjectProperty ;
+    rdfs:label "member" .
+
+org:organization a owl:ObjectProperty ;
+    rdfs:label "organization" .
+
+org:role a owl:ObjectProperty ;
+    rdfs:label "role" .
+
+foaf:Person a owl:Class ;
+    rdfs:label "Person" .
+
+cdc:ContextBroker a owl:Class ;
+    rdfs:label "Context Broker" ;
+    rdfs:subClassOf dcat:DataService .
+
+dcat:DataService a owl:Class ;
+    rdfs:label "Data Service" .
+
+cdc: a owl:Ontology ;
+    dcterms:contributor "Lucia Cabanillas Rodriguez" ;
+    dcterms:created "2025-02-17"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva" ;
+    dcterms:description "Data Catalog Ontology for the CANDIL Data Fabric" ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "CANDIL Data Catalog Ontology" ;
+    vann:preferredNamespacePrefix "cdc" ;
+    vann:preferredNamespaceUri cdc: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/data-catalog-ontology"^^xsd:anyURI ;
+    owl:priorVersion <https://w3id.org/candil-data-fabric/data-catalog> ;
+    owl:versionIRI <https://w3id.org/candil-data-fabric/data-catalog> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .

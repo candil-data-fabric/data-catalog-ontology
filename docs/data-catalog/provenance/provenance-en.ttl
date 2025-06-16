@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/candil-data-fabric/data-catalog> a prov:Entity;
+	 dc:title "CANDIL Data Catalog Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <https://w3id.org/candil-data-fabric/data-catalog>;
+	 prov:wasGeneratedAt "2025-02-17";
+.
+:agent0 a prov:Agent; foaf:name "Ignacio Dominguez Martinez-Casanueva".
+:agent1 a prov:Agent; foaf:name "Lucia Cabanillas Rodriguez".
